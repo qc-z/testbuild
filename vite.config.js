@@ -49,7 +49,8 @@ export default defineConfig({
       }
     },
     chunkSizeWarningLimit: 1500,
-    brotliSize: false
+    brotliSize: false,
+    minify: false
   },
   css: {
     preprocessorOptions: {
