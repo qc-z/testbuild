@@ -1,0 +1,71 @@
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+
+  &-content {
+    background-color: white;
+    width: 422px;
+    height: 232px;
+    padding: 20px;
+  }
+  &-title {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+  }
+  &-progress {
+    text-align: center;
+    margin-top: 38px;
+    .tip {
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #167cf3;
+      font-weight: 400;
+      margin-top: 16px;
+    }
+  }
+}
+
+.el-input {
+  .el-input__inner {
+    border-color: #c1d7f3;
+  }
+}
+.el-dialog {
+  .el-dialog__body {
+    padding: 10px 5px;
+    background: #fbfcff;
+  }
+
+  .el-dialog__title {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+  }
+  .el-dialog__header {
+    border-bottom: 1px solid #e0ecfc;
+    padding-top: 10px;
+  }
+  .el-dialog__headerbtn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #dee4f5;
+    .el-dialog__close {
+      color: #fff;
+    }
+  }
+  .el-dialog__footer {
+    text-align: center;
+    background: #fbfcff;
+  }
+}
