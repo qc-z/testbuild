@@ -4,6 +4,7 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
 import styleImport from 'vite-plugin-style-import'
+import legacy from '@vitejs/plugin-legacy'
 
 const path = require('path')
 
@@ -34,6 +35,10 @@ export default defineConfig({
           }
         }
       ]
+    }),
+    legacy({
+      targets: ['ie >= 11'],
+      additionalLegacyPolyfills: ['regenerator-runtime/runtime']
     })
   ],
   server: {
